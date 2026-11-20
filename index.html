@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candēla Home</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar md:navbar-expand bg-1">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Candēla</a>
+
+            <button class="btn-icon navbar-toggler"
+                type="button"
+                data-bs-toggle="drawer"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end"
+                tabindex="-1"
+                id="navbarNav"
+                aria-labelledby="navbarNavLabel">
+
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="drawer"
+                        aria-label="Close">
+                    </button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                aria-current="page"
+                                href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Collections
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </dialog>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container mt-3">
+
+            <h1 class="my-4">Candēla Canada</h1>
+
+            <div id="heroCarousel" class="carousel carousel-overlay">
+
+                <div class="carousel-inner rounded-5">
+
+                    <div class="carousel-item active">
+                        <img src="images/candle1.jpg"
+                            class="d-block w-100"
+                            alt="Candēla Bar Collection candles">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/candle2.jpg"
+                            class="d-block w-100"
+                            alt="Candēla Intention Collection candles">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/candle3.jpg"
+                            class="d-block w-100"
+                            alt="Candēla Home Collection candles">
+                    </div>
+
+                </div>
+
+                <div class="carousel-overlay-controls">
+
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                        type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide="prev">
+
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                        type="button"
+                        data-bs-target="#heroCarousel"
+                        data-bs-slide="next">
+
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container mt-5">
+
+            <h2 class="my-5">Explore Candēla</h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100">
+
+                        <img src="images/candle1.jpg"
+                            class="w-100"
+                            alt="Candēla Bar Collection candles">
+
+                        <div class="card-body d-flex flex-column align-items-center">
+
+                            <h3 class="card-title">Bar Collection</h3>
+
+                            <p class="card-text">
+                                Cocktail-inspired candles with colourful concepts.
+                            </p>
+
+                            <details class="accordion-item w-100">
+                                <summary class="accordion-header">
+                                    Details
+                                </summary>
+
+                                <div class="accordion-body">
+                                    The Bar Collection includes Mojito, Rum Punch,
+                                    Piña Colada, Mimosa, Espresso Martini,
+                                    and Peach Bellini.
+                                </div>
+                            </details>
+
+                            <button class="btn-solid theme-primary mt-auto"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#candleDialog1">
+                                View Collection
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog" id="candleDialog1">
+
+                        <div class="dialog-header">
+                            <h4>Bar Collection</h4>
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Cocktail-inspired fragrances with bright and playful designs.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100">
+
+                        <img src="images/candle2.jpg"
+                            class="w-100"
+                            alt="Candēla Intention Collection candles">
+
+                        <div class="card-body d-flex flex-column align-items-center">
+
+                            <h3 class="card-title">Intention Collection</h3>
+
+                            <p class="card-text">
+                                Candles inspired by meaningful intentions and everyday rituals.
+                            </p>
+
+                            <details class="accordion-item w-100">
+                                <summary class="accordion-header">
+                                    Details
+                                </summary>
+
+                                <div class="accordion-body">
+                                    The Intention Collection includes Peace,
+                                    Abundance, New Beginnings, Love, and Protection.
+                                </div>
+                            </details>
+
+                            <button class="btn-solid theme-primary mt-auto"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#candleDialog2">
+                                View Collection
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog" id="candleDialog2">
+
+                        <div class="dialog-header">
+                            <h4>Intention Collection</h4>
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="dialog-body">
+                            A collection inspired by positive intentions and personal moments.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100">
+
+                        <img src="images/candle3.jpg"
+                            class="w-100"
+                            alt="Candēla Home Collection candles">
+
+                        <div class="card-body d-flex flex-column align-items-center">
+
+                            <h3 class="card-title">Home Collection</h3>
+
+                            <p class="card-text">
+                                Fragrances designed around different moods and spaces.
+                            </p>
+
+                            <details class="accordion-item w-100">
+                                <summary class="accordion-header">
+                                    Details
+                                </summary>
+
+                                <div class="accordion-body">
+                                    The Home Collection includes Greenhouse,
+                                    Azure Coast, Velvet Smoke, Sunday Clean,
+                                    and Forest Calm.
+                                </div>
+                            </details>
+
+                            <button class="btn-solid theme-primary mt-auto"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#candleDialog3">
+                                View Collection
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog" id="candleDialog3">
+
+                        <div class="dialog-header">
+                            <h4>Home Collection</h4>
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Home fragrances inspired by clean spaces,
+                            woods, florals, and warm interiors.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100">
+
+                        <img src="images/candle4.jpg"
+                            class="w-100"
+                            alt="Candēla Kawaii Collection candles">
+
+                        <div class="card-body d-flex flex-column align-items-center">
+
+                            <h3 class="card-title">Kawaii Collection</h3>
+
+                            <p class="card-text">
+                                Playful candle concepts inspired by desserts and drinks.
+                            </p>
+
+                            <details class="accordion-item w-100">
+                                <summary class="accordion-header">
+                                    Details
+                                </summary>
+
+                                <div class="accordion-body">
+                                    The Kawaii Collection includes Banana Milk,
+                                    Brown Sugar Boba, Melona, Matcha Latte,
+                                    Ube Cake, Mochi, Peach Soju, Mango Pudding,
+                                    and Coffee Jelly.
+                                </div>
+                            </details>
+
+                            <button class="btn-solid theme-primary mt-auto"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#candleDialog4">
+                                View Collection
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog" id="candleDialog4">
+
+                        <div class="dialog-header">
+                            <h4>Kawaii Collection</h4>
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Colourful food and drink concepts turned into candle designs.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100">
+
+                        <img src="images/candle5.jpg"
+                            class="w-100"
+                            alt="Candēla Canada logo">
+
+                        <div class="card-body d-flex flex-column align-items-center">
+
+                            <h3 class="card-title">Find Candēla</h3>
+
+                            <p class="card-text">
+                                Find Candēla at independent retailers across Canada.
+                            </p>
+
+                            <details class="accordion-item w-100">
+                                <summary class="accordion-header">
+                                    Details
+                                </summary>
+
+                                <div class="accordion-body">
+                                    Retail partners include Hanji Gifts,
+                                    Ash & Oak Gifts, Agent 99, Iwa Spa,
+                                    Eugène Allard, Bébé Loup, Sprout Gift Co.,
+                                    The Hygge, Sunday State, Murdoch’s Gem Shop,
+                                    Point Grey Pharmacy, and Foxy Fox Coffee House.
+                                </div>
+                            </details>
+
+                            <button class="btn-solid theme-primary mt-auto"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#candleDialog5">
+                                View Retailers
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog" id="candleDialog5">
+
+                        <div class="dialog-header">
+                            <h4>Find Candēla</h4>
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Candēla is carried by retailers across Ontario,
+                            Quebec, New Brunswick, Saskatchewan, Yukon,
+                            British Columbia, Alberta, and PEI.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100">
+
+                        <img src="images/candle6.jpg"
+                            class="w-100"
+                            alt="Candēla founder at a Canadian trade show">
+
+                        <div class="card-body d-flex flex-column align-items-center">
+
+                            <h3 class="card-title">Trade Shows</h3>
+
+                            <p class="card-text">
+                                Growing Candēla through Canadian retail and wholesale events.
+                            </p>
+
+                            <details class="accordion-item w-100">
+                                <summary class="accordion-header">
+                                    Details
+                                </summary>
+
+                                <div class="accordion-body">
+                                    Candēla has participated in the Canadian Gift
+                                    Association trade show to connect with retailers
+                                    and expand wholesale distribution.
+                                </div>
+                            </details>
+
+                            <button class="btn-solid theme-primary mt-auto"
+                                type="button"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#candleDialog6">
+                                Learn More
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog" id="candleDialog6">
+
+                        <div class="dialog-header">
+                            <h4>Trade Shows</h4>
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Trade shows have helped Candēla connect with
+                            retail buyers and grow its wholesale presence across Canada.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button class="btn-solid theme-primary"
+                                type="button"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-primary fg-contrast-primary mt-5 p-4 text-center">
+        <p>© 2026 Candēla Canada</p>
+    </footer>
+
+</body>
+
+</html>
